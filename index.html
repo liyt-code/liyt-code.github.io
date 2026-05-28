@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB &#23548;&#33322;</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-app-bar">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">W</span>
+        <div>
+          <h1 id="site-title">WEB &#23548;&#33322;</h1>
+          <p id="site-description">&#27491;&#22312;&#21152;&#36733;&#23548;&#33322;&#25968;&#25454;...</p>
+        </div>
+      </div>
+      <label class="search-shell" for="search-input">
+        <span class="search-icon" aria-hidden="true"></span>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="&#25628;&#32034;&#32593;&#31449;&#25110;&#35828;&#26126;"
+          autocomplete="off"
+        />
+      </label>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" aria-label="&#20998;&#31867;">
+        <nav id="category-tabs" class="category-tabs"></nav>
+      </aside>
+
+      <section class="content">
+        <div id="status" class="status" role="status"></div>
+        <div id="category-sections" class="category-sections"></div>
+      </section>
+    </main>
+
+    <template id="category-template">
+      <section class="category-section">
+        <div class="section-heading">
+          <span class="section-icon" aria-hidden="true"></span>
+          <h2></h2>
+          <span class="count"></span>
+        </div>
+        <div class="link-grid"></div>
+      </section>
+    </template>
+
+    <template id="link-template">
+      <a class="link-card" target="_blank" rel="noopener noreferrer">
+        <span class="launch-icon" aria-hidden="true"></span>
+        <span class="favicon" aria-hidden="true"></span>
+        <span class="link-text">
+          <strong></strong>
+          <span></span>
+        </span>
+      </a>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
