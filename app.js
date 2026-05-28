@@ -31,7 +31,7 @@ function slugify(value) {
 }
 
 function normalizeUrl(url) {
-  if (/^https?:\/\//i.test(url)) {
+  if (/^(https?:|mailto:|tel:|#|\/|\.\/|\.\.\/)/i.test(url) || url.includes("/")) {
     return url;
   }
 
@@ -40,7 +40,12 @@ function normalizeUrl(url) {
 
 function getHostname(url) {
   try {
-    return new URL(normalizeUrl(url)).hostname;
+    const normalizedUrl = normalizeUrl(url);
+    if (!/^https?:\/\//i.test(normalizedUrl)) {
+      return "";
+    }
+
+    return new URL(normalizedUrl).hostname;
   } catch {
     return "";
   }

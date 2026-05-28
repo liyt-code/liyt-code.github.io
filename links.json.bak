@@ -1,6 +1,6 @@
 {
   "siteTitle": "WEB 导航",
-  "description": "常用Web工具分类与网站链接。",
+  "description": "通过编辑 links.json 更新分类与网站链接。",
 
   "categories": [
     {
