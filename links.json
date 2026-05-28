@@ -1,0 +1,64 @@
+{
+  "siteTitle": "WEB 导航",
+  "description": "通过编辑 links.json 更新分类与网站链接。",
+  "categories": [
+    {
+      "name": "常用工具",
+      "icon": "apps",
+      "links": [
+        {
+          "title": "Google",
+          "url": "https://www.google.com",
+          "description": "搜索与信息查询"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com",
+          "description": "代码托管与开源项目"
+        },
+        {
+          "title": "Stack Overflow",
+          "url": "https://stackoverflow.com",
+          "description": "开发问题检索"
+        }
+      ]
+    },
+    {
+      "name": "设计资源",
+      "icon": "palette",
+      "links": [
+        {
+          "title": "Material Design",
+          "url": "https://m3.material.io",
+          "description": "Material Design 规范"
+        },
+        {
+          "title": "Figma",
+          "url": "https://www.figma.com",
+          "description": "界面设计与协作"
+        },
+        {
+          "title": "Unsplash",
+          "url": "https://unsplash.com",
+          "description": "高质量图片素材"
+        }
+      ]
+    },
+    {
+      "name": "学习文档",
+      "icon": "school",
+      "links": [
+        {
+          "title": "MDN Web Docs",
+          "url": "https://developer.mozilla.org",
+          "description": "Web 标准与前端文档"
+        },
+        {
+          "title": "Node.js Docs",
+          "url": "https://nodejs.org/docs/latest/api",
+          "description": "Node.js 官方 API 文档"
+        }
+      ]
+    }
+  ]
+}
